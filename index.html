@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calendar</title>
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="./bower_components/bootstrap-calendar/css/calendar.css">
+</head>
+<body>
+	<div class="page-header">
+
+		<div class="pull-right form-inline" style="margin-right: 20px">
+			<div class="btn-group">
+				<button class="btn btn-primary" data-calendar-nav="prev">&lt;&lt; Prev</button>
+				<button class="btn" data-calendar-nav="today">Today</button>
+				<button class="btn btn-primary" data-calendar-nav="next">Next &gt;&gt;</button>
+			</div>
+			
+		</div>
+
+		<h3 style="margin-left: 20px">
+			<span id="date-day"></span>
+			<span id="date-weekday" style="font-size: 14px"></span>
+		</h3>
+
+	</div>
+	<div id="calendar"></div>
+
+	<script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="./bower_components/underscore/underscore.js"></script>
+	<script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./bower_components/bootstrap-calendar/js/calendar.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
