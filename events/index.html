@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/calendar.css">
+	<script type="text/javascript" src="js/jquery-1.9.1-min.js"></script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+</head>
+<body>
+<div id="calendar"></div>
+</body>
+<script>
+	var calendar = $("#calendar").calendar(
+	{
+		tmpl_path: "./tmpls/",
+		events_source: function () { return []; }
+	});
+</script>
+</html>
