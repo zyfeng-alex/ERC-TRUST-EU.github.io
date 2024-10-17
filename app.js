@@ -5,12 +5,12 @@
 	var options = {
 		events_source: function () { return [
 			{
-				"id": "293",
-				"title": "This is warning class event with very long title to check how it fits to evet in day view",
-				"url": "http://www.example.com/",
-				"class": "event-warning",
-				"start": "1631462400000",
-				"end":   "1631635200000"
+				"id": 1,
+                "title": "Seminar",
+                "url": "https://erc-trust.com/events/seminar-Huanfa.html",
+                "class": "event-important",
+                "start": getMilliseconds('2024-11-18 11:00:00'),
+                "end": getMilliseconds('2024-11-18 12:00:00')
 			},
 
 		];},
@@ -18,7 +18,6 @@
 		tmpl_path: 'tmpls/',
 		tmpl_cache: false,
 		day: date,
-		//modal: 1,
 		onAfterEventsLoad: function(events) {
 			if(!events) {
 				return;
@@ -116,5 +115,11 @@
 	        };
 	    };
 	    return fmt;
+	}
+
+	function getMilliseconds(dateString) {
+		const dateObject = new Date(dateString);
+		const milliseconds = dateObject.getTime();
+		return milliseconds;
 	}
 }(jQuery));
