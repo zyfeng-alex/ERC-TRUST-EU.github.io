@@ -34,7 +34,6 @@
 		onAfterViewLoad: function(view) {
 			$('#date-day').text(date);
 			$('#date-weekday').text(this.getDay());
-			//$('.page-header h3').text(date + '  ' + this.getDay());
 			$('.btn-group button').removeClass('active');
 			$('button[data-calendar-view="' + view + '"]').addClass('active');
 		},
