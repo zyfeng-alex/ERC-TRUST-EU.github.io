@@ -6,7 +6,7 @@
 		events_source: function () { return [
 			{
 				"id": 1,
-                "title": "Seminar",
+                "title": "Seminar: Towards Resilient and Sustainable Maritime Transportation",
                 "url": "https://erc-trust.com/events/seminar-Huanfa.html",
                 "class": "event-important",
                 "start": getMilliseconds('2024-11-18 11:00:00'),
