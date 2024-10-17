@@ -6,8 +6,8 @@
 		events_source: function () { return [
 			{
 				"id": 1,
-                "title": "Seminar: Towards Resilient and Sustainable Maritime Transportation",
-                "url": "https://erc-trust.com/events/seminar-Huanfa.html",
+                "title": "Seminar: Spatial analysis for understanding and improving fire service response in West Midlands, UK",
+                "url": "https://erc-trust.com/events/seminar-20241118.html",
                 "class": "event-important",
                 "start": getMilliseconds('2024-11-18 11:00:00'),
                 "end": getMilliseconds('2024-11-18 12:00:00')

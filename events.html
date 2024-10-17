@@ -48,7 +48,7 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('./src/微信图片_20210903000056.jpg')">
+        <header class="masthead" style="background-image: url('./src/20210903000056.jpg')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 col-xl-7">
@@ -63,28 +63,94 @@
         <!-- Main Content-->
         <main class="mb-4">
             <div class="container px-4 px-lg-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Upcoming events</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">All events</a>
+                        </li>
+                      </ul>
+                      <div class="bd-example table-click" style="border: 1px solid black; padding: 10px; cursor: pointer; margin-top: 20px;" data-url="https://erc-trust.com/events/seminar-20241118.html">
+                        <dl>
+                          <dt>Date</dt>
+                          <dd>Monday 18th November 2024, 11:00 - 12:00</dd>
+                          <dt>Location</dt>
+                          <dd>GERI building 1.02, Liverpool John Moores University, 3 Byrom St, Liverpool L3 3AF</dd>
+                          <dt>Topic</dt>
+                          <dd style="text-decoration: underline; text-decoration-skip-ink: none;">Seminar: Spatial analysis for understanding and improving fire service response in West Midlands, UK</dd>
+                        </dl>
+                      </div>
+
+                      <!-- <div class="bd-example table-click" style="border: 1px solid black; padding: 10px; cursor: pointer; margin-top: 20px;" data-url="https://erc-trust.com/events/seminar-20241118.html">
+                        <dl>
+                          <dt>Date</dt>
+                          <dd>Monday 29th November 2024</dd>
+                          <dt>Location</dt>
+                          <dd>Delta Hotels Liverpool City Centre, One Queen Square, Liverpool L1 1RH</dd>
+                          <dt>Topic</dt>
+                          <dd style="text-decoration: underline; text-decoration-skip-ink: none;">Workshop: Towards Resilient and Sustainable Maritime Transportation</dd>
+                        </dl>
+                      </div> -->
+                </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-12">
                         <iframe runat="server"  width="100%" height="680px" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes" src="https://erc-trust.com/calendar.html"></iframe>
                     </div>
                 </div>
+                
             </div>
+            
         </main>
         <!-- Footer-->
         <footer b-lz7i5tvbpc class="border-top">
-            <div b-lz7i5tvbpc class="container text-center">
+            <div class="modal fade" id="wechatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./src/wechat.png" style="width: 450px"/>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div b-lz7i5tvbpc class="container px-4 px-lg-5">
                 <div b-lz7i5tvbpc class="row">
-                    <div b-lz7i5tvbpc class="col-lg-5 col-xs-12">
+                    <div class="col-lg-3 col-xs-12">
+                        <a href="https://erc.europa.eu/homepage" target="_blank">
                         <img style="width: 300px; height:120px" src="./src/erc-logo.png">
+                        </a>
                     </div>
-                    <div b-lz7i5tvbpc class="col-lg-5 col-xs-12">
-                        <div b-lz7i5tvbpc style="padding-top: 10%" class="small text-center text-muted fst-italic">&#xA9;2024 ERC-TRUST All rights reserved.</div>
+                    <div class="col-lg-2 col-xs-12">
+
+                    </div>
+                    <div class="col-lg-7 col-xs-12">
+                        <div> Presented by <span style="font-weight: bold;"> Maritime Research & Innovation Lab (MarRI-Lab) </span>
+                        <div> Follow us on: 
+                            <a href="https://www.linkedin.com/company/maritime-research-innovation-lab/" target="_blank">LinkedIn, </a>
+                            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#wechatModal">Wechat</span>
+                        </div>
+                        <div b-lz7i5tvbpc style="padding-top: 40px" class="small  fst-italic">&#xA9;2024 ERC-TRUST All rights reserved.</div>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Bootstrap core JS-->
+        <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
         <script src="./src/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="./src/scripts.js"></script>
-    </body></html>
+        <script>
+            $(document).ready(function() {
+                $('.table-click').on('click', function() {
+                    var url = $(this).data('url');
+                    window.open(url);
+                })
+            })
+        </script>
+    </body>
+    </html>
