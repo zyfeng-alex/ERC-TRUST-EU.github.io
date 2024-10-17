@@ -12,6 +12,14 @@
                 "start": getMilliseconds('2024-11-18 11:00:00'),
                 "end": getMilliseconds('2024-11-18 12:00:00')
 			},
+			{
+				"id": 2,
+                "title": "Workshop: Towards Resilient and Sustainable Maritime Transportation",
+                "url": "https://erc-trust.com/events/workshop-20241129.html",
+                "class": "event-important",
+                "start": getMilliseconds('2024-11-29 09:00:00'),
+                "end": getMilliseconds('2024-11-29 17:00:00')
+			},
 
 		];},
 		view: 'month',
